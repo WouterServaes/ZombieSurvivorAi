@@ -3,12 +3,12 @@
 #include "Behaviors.h"
 
 //=========Default BT
-//Explore world until a certain nr of houses is found. Agent then goes from found house to found house.
+//Explore world until agent sees a house, remember and go to the house.
 //If the agent needs an item, it'll go to this item if the item is in the agent's memory. If it is not in the agent's memory,
 //it explores the world until it finds this item (avoiding already found houses and adding newly found houses to it's memory)
 //If the agent sees and enemy, run away from this enemy unless the agent's hp is high enough and the agent has a gun, attack if this is the case.
 //When the agent sees a purge zone, run away from this purge zone
-//world exploration: agent travels the world grid in a straight line, until a found has been found. If this is a new house, the agent will explore this house.
+//world exploration: agent travels the world grid, until a house found has been found. If this is a new house, the agent will explore this house.
 //if this house was already found the agent will change its explore direction, same when the agent hits the world edge.
 //=================
 Elite::BehaviorTree* DefaultBT(Elite::Blackboard* pBlackboard)
