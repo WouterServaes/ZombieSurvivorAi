@@ -18,11 +18,11 @@ View my portfolio [here](https://wouterservaes.myportfolio.com/)!
 - [Framework](#framework)
 - [End](#end)
 ## Program overview <a name ="overview"></a>
-Once the program gets executed everything starts. The goal is to have the survivor survive for as long as possible while killing zombies. The Survivor does not know anything about the world, only what is in it's vision or nearby. The survivor has an inventory for food, water, weapons and ammo. After surviving for some time, "purge zones" can spawn in the world. The survivor rapidly loses health when in a purge zone. ![Screenshot of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/master/Images/Zombie_Img03.png) ![Gif of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/master/Images/Zombie_Img02.gif) 
+Once the program gets executed everything starts. The goal is to have the survivor survive for as long as possible while killing zombies. The Survivor does not know anything about the world, only what is in it's vision or nearby. The survivor has an inventory for food, water, weapons and ammo. After surviving for some time, "purge zones" can spawn in the world. The survivor rapidly loses health when in a purge zone. ![Screenshot of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/main/Images/Zombie_Img03.png) ![Gif of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/main/Images/Zombie_Img02.gif) 
 ## Ai explanation <a name ="explanation"></a>
 I use a behavior tree with blackboard for the AI. AI movement is done using simple steering behaviors. It remembers where it has been, houses it has found and items it didn't pick up yet (saving the item for later).
 ### Behavior Tree <a name ="bt"></a>
-The behavior tree can be found [here](https://github.com/WouterServaes/ZombieSurvivorAi/blob/master/project/BehaviorTrees.cpp). The implementation of each condition and action is [here](https://github.com/WouterServaes/ZombieSurvivorAi/blob/master/project/Behaviors.h).
+The behavior tree can be found [here](https://github.com/WouterServaes/ZombieSurvivorAi/blob/main/project/BehaviorTrees.cpp). The implementation of each condition and action is [here](https://github.com/WouterServaes/ZombieSurvivorAi/blob/main/project/Behaviors.h).
 
 #### World <a name ="world"></a> [(code)](https://github.com/WouterServaes/ZombieSurvivorAi/blob/117cab0dd50c59b66bff94848abbdd42f5a35de9/project/BehaviorTrees.cpp#L105) 
 
@@ -46,7 +46,7 @@ When the survivor sees a purge zone, it avoids it. If it is in a purge zone it g
 ## Conclusion <a name ="conclusion"></a>
 The AI was almost a success, it successfully does everything I want it to do but dies faster than many of the other students' projects (oops). I learned a lot from it and am happy with the result.
 
-![Gif of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/master/Images/Zombie_Img01.gif) 
+![Gif of application](https://github.com/WouterServaes/ZombieSurvivorAi/blob/main/Images/Zombie_Img01.gif) 
 
 ## Framework <a name ="framework"></a>
 For this project I used the Elite Engine framework, authors of this framework are Matthieu Delaere and Thomas Goussaert. Provided during the course.
